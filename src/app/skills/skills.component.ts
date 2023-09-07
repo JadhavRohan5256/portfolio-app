@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styles: [
-  ]
+  styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-
+  constructor() {}
 }
