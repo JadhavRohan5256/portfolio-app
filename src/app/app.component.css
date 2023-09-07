@@ -83,12 +83,16 @@
 .nav-menu li a {
     text-decoration: none;
     color: var(--color);
-    padding: 12px;
+    padding: 14px;
     font-size: 1.1rem;
     font-weight: 300;
 }
 
 .nav-menu li a:hover {
+    background-color: var(--hover-color);
+}
+
+.active {
     background-color: var(--hover-color);
 }
 
@@ -117,7 +121,7 @@
 
 
 /* media queries */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     
     .nav-icon {
         display: block;
