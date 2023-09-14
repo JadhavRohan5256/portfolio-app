@@ -115,7 +115,8 @@
 }
 
 .content {
-    color: var(--color)
+    color: var(--color);
+    height: 100%;
 }
 
 
@@ -160,7 +161,6 @@
         margin: 10px;
         overflow: hidden;
         z-index: 300;
-        border: 2px solid var(--border-color);
         transition: transform 1s ease-in-out;
     }
     
@@ -180,6 +180,6 @@
     }
 
     .nav-menu li a:hover {
-        background-color: var(--border-color);
+        background-color: var(--hover-color);
     }
 }
