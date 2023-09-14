@@ -35,8 +35,9 @@
         </div>
     </div>
     <div class="home-right">
-        <div class="profile-wrapper">
-            <img src="./../../assets/profile/rohan.png" alt="profile">
+        <div class="profile-wrapper" >
+            <loader *ngIf="!isProfileLoaded" class="loader-wrapper"></loader>
+            <img src="./../../assets/profile/rohan.png" loading="lazy" (load)="onProfileLoad()" [ngClass]="{'animate' : isProfileLoaded === true}" alt="profile">
         </div>
     </div>
 </div>

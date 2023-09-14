@@ -11,6 +11,7 @@ import { AuthComponent } from './auth/auth.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SkillsComponent } from './skills/skills.component';
     PageNotFoundComponent,
     PortfolioComponent,
     ServiceComponent,
-    SkillsComponent
+    SkillsComponent,
+    LoaderComponent
 
   ],
   imports: [
