@@ -152,15 +152,14 @@
     
     .nav-menu {
         position: fixed;
-        bottom: 0;
-        right: 0;
+        top: calc(var(--nav-height) + 20px);
+        right: 20px;
         flex-direction: column;
         background-color: var(--bg-surface);
         width: 200px;
-        height: calc(100vh - var(--nav-height) - 24px);
+        height: calc((100vh - var(--nav-height)) - 40px);
         transform: translateX(200px);
         border-radius: 10px;
-        margin: 10px;
         overflow: hidden;
         z-index: 300;
         transition: transform 1s ease-in-out;
