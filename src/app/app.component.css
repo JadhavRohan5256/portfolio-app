@@ -84,7 +84,7 @@
 .nav-menu li a {
     text-decoration: none;
     color: var(--color);
-    padding: 14px;
+    padding: 15px;
     font-size: 1.1rem;
     font-weight: 300;
 }
