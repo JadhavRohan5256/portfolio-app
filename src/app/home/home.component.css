@@ -14,13 +14,20 @@
     gap: 1rem;
 }
 
+.intro {
+    padding: 2rem;
+    background-color: var(--bg-surface);
+    border-radius: 20px;
+}
+
 .highlight {
     color: var(--primary-color);
     font-weight: 400;
 }
 
 h1, h2 {
-    font-weight: 400;
+    font-weight: 300;
+    font-family: var(--poppins);
 }
 
 .contact-section {
@@ -47,16 +54,18 @@ h1, h2 {
 
 .btn-section a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     box-shadow: 0px 0px 2px var(--color);
-    border-radius: 3px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     font-weight: 300;
+    font-size: 0.9rem;
 }
 
 .btn-section a:first-of-type {
     background-color: var(--primary-color);
+    box-shadow: 0px 0px 2px var(--primary-color);
 }
 
 .btn-section a:first-of-type:hover {
@@ -69,15 +78,15 @@ h1, h2 {
 
 .social-profile {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .social-profile a {
     text-decoration: none;
-    padding: 10px;
-    box-shadow: 0px 0px 2px var(--color);
-    border-radius: 3px;
+    padding: 1rem;
+    border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
+    background-color: var(--bg-surface);
 }
 
 .social-profile a:hover {
@@ -129,9 +138,8 @@ h1, h2 {
 }
 
 .animate {
-    background-color: var(--green-color);
-    animation: animate 3s infinite linear;
-    box-shadow: 0px 0px 10px var(--green-color);
+    background-color: var(--primary-color);
+    animation: animate 4s infinite linear;
 }
 
 .cv_preview {
@@ -168,6 +176,7 @@ h1, h2 {
         max-width: 600px;
         margin: 0 auto;
         order: 2;
+        gap: 2rem;
     }
 
     .home-right {
@@ -180,17 +189,9 @@ h1, h2 {
     }
 }
 
-@media only screen and (max-width: 450px) {
-    .profile-wrapper {
-        width: 90%;
-        height: auto;
-    }
-
-    
-}
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .intro h1 {
         font-size: 1.8rem;
     }
@@ -198,28 +199,30 @@ h1, h2 {
     .intro h2 {
         font-size: 1.2rem;
     }
-
+    
     .contact-section {
         flex-direction: column;
         gap: 0.5rem;
     }
     
-    .btn-section a {
-        padding: 5px 10px;
-    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 450px) {
+    .profile-wrapper {
+        width: 90%;
+        height: auto;
+    }
+
     .btn-section {
         flex-direction: column;
     }
 
     .btn-section a {
-        padding: 10px 20px;
+        padding: 15px 20px;
         text-align: center;
     }
 
     .social-profile {
-        justify-content: space-between;
+        justify-content: center;
     }
 }
