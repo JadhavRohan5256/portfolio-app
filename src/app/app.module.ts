@@ -30,7 +30,7 @@ import { LoaderComponent } from './loader/loader.component';
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
