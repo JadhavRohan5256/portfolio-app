@@ -1,3 +1,7 @@
+.about-wrapper {
+    overflow-x: hidden;
+}
+
 .about-title {
     font-weight: 300;
     font-family: var(--poppins);
@@ -5,4 +9,56 @@
 
 .hightlight {
     color: var(--primary-color)
+}
+
+.card-wrapper {
+    font-family: var(--rubik);
+    font-weight: 300;
+    background-color: var(--bg-surface);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 12px auto;
+}
+
+.card-wrapper span {
+    font-weight: 400;
+}
+
+.card-wrapper .section-left {
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.section-right {
+    margin-left: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-left p:first-of-type, 
+.contact-right p:first-of-type {
+    font-weight: 400;
+}
+
+.contact-left a {
+    text-decoration: none;
+}
+
+.contact-left a:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
