@@ -70,3 +70,7 @@ body {
         width: 90%;
     }
 }
+
+::selection {
+    background-color: var(--primary-color);
+}
