@@ -1,7 +1,8 @@
 .about-title {
-    font-weight: 400;
+    font-weight: 300;
+    font-family: var(--poppins);
 }
 
 .hightlight {
-    font-weight: 300;
+    color: var(--primary-color)
 }
