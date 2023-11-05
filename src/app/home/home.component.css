@@ -1,7 +1,7 @@
 .home-wrapper {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - var(--nav-height) - 24px);
 }
 
 /* home left css  */
@@ -173,6 +173,7 @@ h1, h2 {
 @media only screen and (max-width: 1000px) {
     .home-wrapper {
         flex-direction: column;
+        height: 100%;
     }
 
     .home-left {
@@ -185,10 +186,6 @@ h1, h2 {
     .home-right {
         order: 1;
         justify-content: center;
-    }
-
-    .social-profile {
-        margin-bottom: 4rem;
     }
 }
 

@@ -29,9 +29,9 @@
 
 /*dark mode  */
 :root {
-    --bg: #121212;
-    --bg-surface: #212121;
-    --color: #ffffff;
+    --bg: #212121;
+    --bg-surface: #313131;
+    --color: #FFFFFF;
     --hover-color: rgba(255, 255, 255, 0.1); 
     --border-color: #00000061;
 }
@@ -49,7 +49,17 @@
 body {
     background-color: var(--bg);
     font-family: var(--poppins);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--pink-color);
+    border-radius: 10px;
 }
 
 .container {
@@ -73,4 +83,5 @@ body {
 
 ::selection {
     background-color: var(--primary-color);
+    color: #FFFFFF;
 }
