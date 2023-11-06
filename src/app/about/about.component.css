@@ -14,6 +14,11 @@
     position: relative;
 }
 
+.hightlight {
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
 .action p {
     width: 12px;
     height: 12px;
@@ -21,24 +26,23 @@
     cursor: pointer;
     background-color: var(--error-bg);
     position: absolute;
-    top: 25px;
+    top: 19px;
     right: 14px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .action p:hover {
     opacity: 0.8;
-}
-
-
-.hightlight {
-    color: var(--primary-color)
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card-wrapper {
     font-family: var(--rubik);
     font-weight: 300;
-    background-color: var(--bg-surface);
-    padding: 2rem;
+    /* background-color: var(--bg-surface); */
+    padding: 1px;
     border-radius: 20px;
     margin: 12px auto;
 }
@@ -52,7 +56,6 @@
     font-weight: 400;
     margin: 0.5rem 0;
     color: var(--pink-color);
-    text-decoration: underline;
 }
 
 .section-right {
@@ -100,6 +103,7 @@
     transition: background-color 0.3s ease-in-out;
     font-weight: 300;
     font-size: 0.9rem;
+    background-color: var(--bg-surface);
 }
 
 .btn-section a:first-of-type {
@@ -111,6 +115,9 @@
     opacity: 0.9;
 }
 
+.btn-section a:last-of-type {
+    box-shadow: 0px 0px 2px var(--bg-surface);
+}
 .btn-section a:last-of-type:hover {
     background-color: var(--pink-color);
     box-shadow: 0px 0px 2px var(--pink-color);
