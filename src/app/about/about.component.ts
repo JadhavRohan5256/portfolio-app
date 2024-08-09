@@ -1,5 +1,4 @@
 import { Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core'
-import { interval } from 'rxjs';
 
 interface sectionsType {
     title: string;
@@ -35,34 +34,63 @@ export class AboutComponent implements OnInit, OnDestroy {
 
     private fetchData(): void {
         this.greeting = "Hello";
-        this.introSpeech = "I'm Rohan Ramhari Jadhav, a passionate and dedicated full stack web developer with a diverse skill set encompassing HTML5, CSS3, JavaScript, Angular, React.js, React Native, AWS, Spring Boot, and Hibernate. I thrive on creating immersive and user-friendly web applications, and my journey in the world of web development has been an exciting adventure.";
+        this.introSpeech = "I am Rohan Ramhari Jadhav, a highly skilled and enthusiastic full-stack web developer with extensive expertise in modern web technologies. My expertise includes HTML5, CSS3, JavaScript, Angular, React.js, TypeScript and RxJS. I am passionate about building high-performance, engaging web applications and creating user-centric digital solutions.";
         this.sections = [
             {
                 title: "My Expertise",
                 contentList: [
                     {
                         subTitle: "HTML5 & CSS3",
-                        subContent: "I specialize in crafting stunning, responsive web designs, ensuring that every website I work on not only looks fantastic but also functions seamlessly on all devices and browsers."
+                        subContent: "Expert in developing visually appealing, responsive web interfaces that deliver a seamless experience across all devices and browsers."
                     },
                     {
-                        subTitle: "JavaScript",
-                        subContent: "I'm a JavaScript enthusiast, and I leverage the power of this language to create interactive, dynamic, and feature-rich web applications that engage users."
+                        subTitle: "JavaScript & TypeScript",
+                        subContent: "Proficient in JavaScript and TypeScript to create dynamic, interactive applications with robust functionality."
                     },
                     {
                         subTitle: "Angular & React Js",
-                        subContent: "I'm well-versed in both Angular and React.js, two popular front-end frameworks. I use them to build scalable, performant, and maintainable applications."
+                        subContent: "Experienced in using Angular and React.js to develop scalable, maintainable and high-performance front-end solutions. I have created and maintained complex admin dashboards and integrated various UI elements to enhance user experience."
                     },
                     {
-                        subTitle: "React Native",
-                        subContent: "My proficiency in React Native allows me to extend my skills into the realm of mobile app development, delivering cross-platform solutions that provide a native-like"
+                        subTitle: "RxJS",
+                        subContent: "Use RxJS for reactive programming to efficiently manage asynchronous data streams and improve application performance."
                     },
                     {
                         subTitle: "AWS",
                         subContent: "My expertise in Amazon Web Services (AWS) ensures that the applications I build are not only functional but also scalable, secure, and cost-effective."
                     },
                     {
-                        subTitle: "Spring Boot & Hibernate",
-                        subContent: "My back-end skills include Spring Boot and Hibernate, enabling me to create robust, efficient server-side components for your web applications."
+                        subTitle: "Node Js",
+                        subContent: "Complement my full-stack skills with Node.js to develop efficient server-side applications."
+                    },
+                    {
+                        subTitle: "Database",
+                        subContent: "Proficient in MySQL and MongoDB, designed and managed databases for robust data handling and storage"
+                    },
+                    {
+                        subTitle: "Rest API",
+                        subContent: "Experienced in building and integrating RESTful APIs for seamless communication between application components."
+                    },
+                    {
+                        subTitle: "Tools & Platforms",
+                        subContent: "Proficient in Git, GitHub, Bitbucket, GitLab and Docker for version control, collaboration and containerization."
+                    }
+                ]
+            },
+            {
+                title: "Key Projects",
+                contentList: [
+                    {
+                        subTitle: "Admin Dashboard",
+                        subContent: "Developed and maintained admin dashboard using HTML, CSS3, JavaScript, Angular, and React.js. Enhanced the user interface with Angular, Tailwind CSS and React Material-UI for a refined design and added interactive features to increase performance by optimizing the Lighthouse score."
+                    },
+                    {
+                        subTitle: "UI Enhancements",
+                        subContent: "Integrated PrimeNg UI components to improve user experience and ensure seamless functionality. Designed and implemented scripts to retrieve and compare PI server data, ensuring data accuracy. Managed client-side JWT token authentication to enhance data security."
+                    },
+                    {
+                        subTitle: "Interactive Interfaces",
+                        subContent: "Built an intuitive user interface using modern JavaScript frameworks, HTML5 and CSS3 with a focus on Angular to provide a smooth user experience. Fixed UI-related issues by handling SonarQube code quality issues and improved project functionality."
                     }
                 ]
             },
@@ -70,7 +98,7 @@ export class AboutComponent implements OnInit, OnDestroy {
                 title: "My Approach",
                 contentList: [
                     {
-                        subContent: "I'm not just a developer; I'm a problem solver. I approach each project with a focus on the user experience, clean code, and performance optimization. My goal is to translate your vision into a digital reality that exceeds your expectations."
+                        subContent: "I'm not just a developer; I am a problem solver committed to delivering exceptional user experience. My focus is on clean, efficient code, performance optimization and staying up to date with the latest industry trends. I believe in a collaborative approach, working closely with designers, developers and stakeholders to achieve project goals and exceed expectations."
                     }
                 ]
             },
@@ -78,13 +106,16 @@ export class AboutComponent implements OnInit, OnDestroy {
                 title: "Why Choose Me",
                 contentList: [
                     {
-                        subContent: "I'm committed to staying up-to-date with the latest web development trends and technologies, ensuring that your project benefits from the most current solutions."
+                        subTitle: "Cutting-Edge Knowledge",
+                        subContent: "I keep up to date with the latest developments in web technology to provide the most advanced solutions to your project."
                     },
                     {
-                        subContent: "My collaborative nature means I'm an excellent team player and communicator, working closely with designers, back-end developers, and stakeholders to achieve project goals."
+                        subTitle: "Team-Oriented",
+                        subContent: "My collaborative nature ensures effective communication and teamwork with all project members."
                     },
                     {
-                        subContent: "I'm passionate about delivering projects on time and within budget, always aiming for the highest quality standards."
+                        subTitle: "Commitment to Excellence",
+                        subContent: "I am dedicated to delivering high-quality projects on time and on budget, adhering to the highest standards of performance and efficiency."
                     }
                 ]
             },
@@ -92,7 +123,7 @@ export class AboutComponent implements OnInit, OnDestroy {
                 title: "Get in Touch",
                 contentList: [
                     {
-                        subContent: "I'm always eager to take on new challenges and help businesses succeed through the power of technology. If you're looking for a front-end developer who can bring your web and mobile applications to life, don't hesitate to reach out. Let's discuss how I can contribute to your next project."
+                        subContent: "I am always eager to take on new challenges and contribute to your success through technology. If you are looking for a versatile developer to bring your web and mobile applications to life, feel free to get in touch. Let's discuss how I can be a valuable asset to your next project."
                     }
                 ]
             }
@@ -150,7 +181,7 @@ export class AboutComponent implements OnInit, OnDestroy {
 
         const btnSection = await this.createHtmlElement('div', this.cardWrapper?.nativeElement, [], 'btn-section')
         const btnA = await this.createHtmlElement('a', btnSection, [..."Download CV"])
-        this.renderer.setAttribute(btnA, 'href', `https://drive.google.com/uc?export=download&id=1vDmbSLO9cYtCRvH-GF8f3TRz90Vm_RoQ`)
+        this.renderer.setAttribute(btnA, 'href', `https://drive.google.com/uc?export=download&id=1NkX131LJs0GWxr75qGv9mQVB3RbNwwNz`)
         const btnB = await this.createHtmlElement('a', btnSection, [..."Hire Me Now"]);
         this.renderer.setAttribute(btnB, 'href', '#')
         
