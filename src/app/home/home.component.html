@@ -2,7 +2,7 @@
     <div class="home-left">
         <div class="intro">
             <h1>Hi I'm Rohan Jadhav</h1>
-            <h2>And I'm <span class="highlight">Java Full Stack Developer</span></h2>
+            <h2>And I'm <span class="highlight">Full Stack Developer</span></h2>
             <p>I am a passionate and results-driven Software Engineer with a strong foundation in web development and a thirst for solving complex problems through code.</p>
             <div class="contact-section">
                 <div class="contact-left">
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="btn-section">
-                <a href="https://drive.google.com/uc?export=download&id=1NjTInRQsEtZHjrfrVeyMF1NMor_ZTQ4S" download="Rohan_Jadhav_GoDigital.pdf">Download CV</a>
+                <a href="https://drive.google.com/uc?export=download&id=1NkX131LJs0GWxr75qGv9mQVB3RbNwwNz" download="Rohan_Jadhav_Resume.pdf">Download CV</a>
                 <a href="#">Hire Me Now</a>
             </div>
         </div>
@@ -37,7 +37,12 @@
     <div class="home-right">
         <div class="profile-wrapper" >
             <loader *ngIf="!isProfileLoaded" class="loader-wrapper"></loader>
-        <img src="./../../assets/profile/rohan.png" (load)="onProfileLoad()" [ngClass]="isProfileLoaded ? 'animate show' : 'hide'" alt="profile">
+            <img 
+                src="./../../assets/profile/rohan.png" 
+                (load)="onProfileLoad()" 
+                [ngClass]="isProfileLoaded ? 'animate show' : 'hide'" 
+                alt="profile"
+            />
         </div>
     </div>
 </div>
