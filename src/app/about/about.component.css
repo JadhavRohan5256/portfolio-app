@@ -1,0 +1,144 @@
+.about-wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.about-title {
+    font-weight: 300;
+    font-family: var(--poppins);
+}
+
+.action {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+
+.hightlight {
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.action p {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--error-bg);
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.action p:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-wrapper {
+    font-family: var(--rubik);
+    font-weight: 300;
+    /* background-color: var(--bg-surface); */
+    padding: 1px;
+    border-radius: 20px;
+    margin: 12px auto;
+}
+
+.card-wrapper .greeting {
+    font-weight: 400;
+    color: var(--pink-color);
+}
+
+.card-wrapper .section-left {
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: var(--pink-color);
+}
+
+.section-right {
+    margin-left: 2rem;
+}
+
+.section-right li .subtitle{
+    font-weight: 400;
+    color: var(--pink-color)
+}
+
+
+.contact-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-left p:first-of-type, 
+.contact-right p:first-of-type {
+    font-weight: 400;
+}
+
+.contact-left a {
+    text-decoration: none;
+}
+
+.contact-left a:hover {
+    color: var(--primary-color)
+}
+
+.btn-section {
+    margin: 1rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-section a {
+    text-decoration: none;
+    padding: 15px 20px;
+    box-shadow: 0px 0px 2px var(--color);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background-color: var(--bg-surface);
+}
+
+.btn-section a:first-of-type {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 2px var(--primary-color);
+}
+
+.btn-section a:first-of-type:hover {
+    opacity: 0.9;
+}
+
+.btn-section a:last-of-type {
+    box-shadow: 0px 0px 2px var(--bg-surface);
+}
+.btn-section a:last-of-type:hover {
+    background-color: var(--pink-color);
+    box-shadow: 0px 0px 2px var(--pink-color);
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn-section {
+        flex-direction: column;
+    }
+
+    .btn-section a {
+        padding: 15px 20px;
+        text-align: center;
+    }
+}
